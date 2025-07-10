@@ -1,0 +1,109 @@
+/* Reset & font setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+
+/* Fundraiser Section */
+.fundraiser-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #1D4ED8;;
+  color: white;
+}
+
+.fundraiser-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtext {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+.fundraiser-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Card styling */
+.card {
+  background: #ffffff;
+  color: #333;
+  width: 330px;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.card:hover img {
+  filter: brightness(1.1);
+}
+
+.card-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 1.4rem;
+  color: #0072ff;
+  margin-bottom: 0.8rem;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  background: #001f3f;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fundraiser-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}

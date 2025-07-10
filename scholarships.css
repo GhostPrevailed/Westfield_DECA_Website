@@ -1,0 +1,56 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1D4ED8; /* DECA Blue */
+    color: #ffffff;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.note {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.scholarship-info {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scholarship-link {
+    color: #00a3e0;
+    text-decoration: none;
+    font-weight: bold;
+}
