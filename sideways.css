@@ -1,0 +1,50 @@
+.wrapper {
+  width: 90%;
+  max-width: 1536px;
+  height: 600px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.scroll-track {
+  display: flex;
+  gap: 1.5rem;
+  position: absolute;
+  left: 0;
+  animation: scrollLeft 40s linear infinite;
+}
+
+.item {
+  width: 300px;
+  height: 450px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Animation keyframes */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

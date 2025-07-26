@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DECA Scholarships</title>
-  <link rel="stylesheet" href="scholarships.css" />
+  <title>Westfield High School DECA</title>
+  <link rel="stylesheet" href="leadership.css" />
   <link rel="stylesheet" href="navigationstyle.css" />
-  <link rel="stylesheet" href="footer.css" />
-  <!-- Import Merriweather font -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="footer.css"  />
+  <link rel="stylesheet" href="sideways.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <header class="header">
@@ -27,37 +28,52 @@
       <a href="contact-us.html" class="nav-link">GET IN TOUCH</a>
     </nav>
   </header>
+  <!-- Hero Banner -->
+<section class="hero-banner">
+  <div class="hero-content">
+    <h1>Meet the Executive Leadership Team</h1>
+    <a href="#leadership" class="scroll-down">
+      ↓
+    </a>
+  </div>
+</section>
 
-  <main class="main">
-    <div class="two-halves">
-      <div class="left-half">
-        <p class="subheading">Funded Nationally by DECA</p>
-        <h1 class="main-heading">SCHOLARSHIPS</h1>
-        <p class="main-text">
-          DECA members will apply for scholarships through the Student Member Portal. Once in the portal, click "Apply for Scholarships," complete your profile and click “Submit” at the bottom. After submitting your profile, the scholarship applications will populate with any scholarships for which you meet the criteria. Scholarship applications may be saved and finished later, providing that your student profile is submitted. The scholarship program will time out after 20 minutes of non-usage.
-        </p>
-        <p class="note">
-          <strong>**Only current, submitted DECA members may apply, using their membership ID and password**</strong>
-        </p>
-      </div>
+<!-- Leadership Section -->
+<section id="leadership" class="leadership-section">
 
-      <div class="right-half">
-<div class="scholarship-info">
-  <div class="logo-and-text">
-    <img src="Images/simpledecalogo.jpg" alt="DECA Logo" class="deca-logo" />
-    <div class="text-content">
-      <h3><strong>Scholarships | High School | DECA Inc.</strong></h3>
-      <p>Apply for your share of $200,000 in scholarships from DECA's corporate partners.</p>
-      <a href="https://www.deca.org/scholarships?utm_source=canva&utm_medium=iframely" target="_blank" class="scholarship-link">
-        <img src="Images/simpledecalogo.jpg" alt="DECA small logo" class="small-logo" />
-        deca.org
-      </a>
-    </div>
+
+<div class="wrapper">
+  <div class="scroll-track">
+    <img src="Images/1.png" class="item" />
+    <img src="Images/2.png" class="item" />
+    <img src="Images/3.png" class="item" />
+    <img src="Images/4.png" class="item" />
+    <img src="Images/5.png" class="item" />
+    <img src="Images/6.png" class="item" />
+    <img src="Images/7.png" class="item" />
+    <img src="Images/8.png" class="item" />
+    <img src="Images/9.png" class="item" />
+    <img src="Images/10.png" class="item" />
+    <img src="Images/11.png" class="item" />
+
+    <img src="Images/1.png" class="item" />
+    <img src="Images/2.png" class="item" />
+    <img src="Images/3.png" class="item" />
+    <img src="Images/4.png" class="item" />
+    <img src="Images/5.png" class="item" />
+    <img src="Images/6.png" class="item" />
+    <img src="Images/7.png" class="item" />
+    <img src="Images/8.png" class="item" />
+    <img src="Images/9.png" class="item" />
+    <img src="Images/10.png" class="item" />
+    <img src="Images/11.png" class="item" />
   </div>
 </div>
-    </div>
-  </main>
-  <footer class="footer">
+
+
+
+</section>
+<footer class="footer">
   <div class="footer-container">
     <div class="footer-card glass">
       <div class="footer-brand">
@@ -90,5 +106,17 @@
     </div>
   </div>
 </footer>
+
+
 </body>
 </html>
+<script>
+  function scrollLeadership(direction) {
+    const container = document.getElementById('leadershipScroll');
+    const scrollAmount = 250; // pixels
+    container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+  }
+</script>
+
+
+  

@@ -1,0 +1,116 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #e5f0ff;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.calendar-main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.calendar-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #00004d;
+  margin-bottom: 0.2rem;
+}
+
+.calendar-subtitle {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.deca-blue {
+  color: #0061a8;
+  font-weight: 700;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.calendar-month {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.calendar-month h2 {
+  background: #0061a8;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.calendar-month ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.calendar-month li {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.calendar-month a {
+  color: #0061a8;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.calendar-month a:hover {
+  text-decoration: underline;
+}
+.month-boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.month-box {
+  display: flex;
+  background-color: white;
+  border: 2px solid #ccc;
+  width: 500px;
+  height: 180px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.month-box img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.month-text {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.month-text h3 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.month-text p {
+  margin: 0;
+  font-size: 1em;
+}
